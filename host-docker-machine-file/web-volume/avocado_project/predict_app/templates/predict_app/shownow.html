@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+        <div class="col-sm-3 col-md-2">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="/predict/shownow/">현황 보기</a></li>
+            <li class = "list-group-item"><a href="/predict/company/p=1/">고객기업 분석</a></li>
+            <li class = "list-group-item"><a href="#">전체 거래 조회</a></li>
+            <li class = "list-group-item"><a href="#">기타</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col"><h1 class="page-header">현황 보기</h1></div>
+                </div>
+                <div class="row">
+                    <div class="col card" >
+                        <h4 class="card-header">2017 파레트 입고량 회수량</h4>
+                        <div class="card-body" id="chart_div">
+                        </div>
+                    </div>
+
+                    <div class="col card" >
+                        <h4 class="card-header">2017 파레트 유실</h4>
+                        <div class="card-body" id="chart_div2"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col card">
+                        <h4 class="card-header">입고량 TOP8 기업 추이</h4
+                            <div class="card-body" id="dashboard_div">
+                                <!--Divs that will hold each control and chart-->
+                                <div id="filter_div"></div>
+                                <div id="chart_div3"></div>
+                                <div id="table_div"></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+</div>
+
+    <script type="text/javascript" >
+          google.charts.load('current', {'packages':['corechart','controls', 'table']});
+          google.charts.setOnLoadCallback(drawareaChart);
+          google.charts.setOnLoadCallback(drawbarChart);
+          google.charts.setOnLoadCallback(drawDashboard);
+
+          function drawareaChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['month', '입고량', '회수량', "손실"],
+              ['1',  2713197,  2700000 , 13197],
+              ['2',  2557191,  2437191, 10000],
+              ['3',  3017640,  2017640,12000],
+              ['4',  2835805,  2835600, 20000],
+              ['5',2965115, 1065115, 40300],
+              ['6',3026141, 2526141, 23485],
+              ['7',3090643, 2590643,21288],
+              ['8',3059726, 2059726, 165934]
+            ]);
+
+            var area_options = {
+              title: '2017년도 데이터',
+              hAxis: {title: '월별',  titleTextStyle: {color: '#333'}},
+              vAxis: {minValue: 0},
+              //width: 500,
+              height: 400
+            };
+
+
+            var area_chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            area_chart.draw(data, area_options);
+          };
+
+
+
+        function drawbarChart(){
+            var data = google.visualization.arrayToDataTable([
+            ['month','손실량'],
+            ['1', 10340],
+            ['2', 103500],
+            ['3', 153400],
+            ['4', 99400],
+            ['5', 103500],
+            ['6', 303400],
+            ['7', 109000],
+            ['8', 10000],
+          ])
+
+          var bar_options = {title:'전체 파레트 유실량 추이',
+                               //width:500,
+                               height:400,
+                                hAxis: {title: '유실량',  titleTextStyle: {color: '#333'}},
+                                vAxis: {title: '월',  titleTextStyle: {color: '#333'}},
+                               legend: 'none'};
+
+            var bar_chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+            bar_chart.draw(data, bar_options);
+        }
+
+
+
+      function drawDashboard() {
+
+        // Create our data table.
+        var data = google.visualization.arrayToDataTable([['회사', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017'],
+['롯데알미늄(진천공장)',
+  223322,
+  188309,
+  198411,
+  205781,
+  197284,
+  210091,
+  208286,
+  170664],
+
+ ['한일제관(주)-대전공장',
+  138316,
+  167700,
+  218432,
+  213128,
+  226233,
+  237111,
+  244029,
+  173292],
+
+['깨끗한나라 주식회사',
+  108636,
+  149144,
+  172984,
+  242816,
+  246256,
+  289168,
+  325796,
+  210915],
+['(주)농심-포승배송지점(물류)',
+  181829,
+  233018,
+  266849,
+  282962,
+  249064,
+  245252,
+  227535,
+  153613],
+['한국제지(주)', 171516, 251200, 290090, 299464, 252761, 276087, 272486, 179924],
+ ['대한제분(주)(인천공장)',
+  240033,
+  239272,
+  261387,
+  256107,
+  263644,
+  274298,
+  268264,
+  197144],
+    ['(주)오뚜기-대풍공장',
+  288026,
+  322813,
+  284116,
+  184575,
+  214719,
+  246694,
+  383915,
+  299347],
+    ['오뚜기라면(주)', 330369, 349623, 385376, 232602, 225220, 258352, 354512, 268448],
+        ]);
+
+        // Create a dashboard.
+        var dashboard = new google.visualization.Dashboard(
+            document.getElementById('dashboard_div'));
+
+
+        var table = new google.visualization.ChartWrapper({
+              'chartType': 'Table',
+              'containerId': 'table_div',
+              'options': {
+                  'width':1200,
+                  'allowHtml':true,
+              }
+            });
+        // Create a range slider, passing some options
+        var donutRangeSlider = new google.visualization.ControlWrapper({
+          'controlType': 'CategoryFilter',
+          'containerId': 'filter_div',
+          'options': {
+            'filterColumnLabel': '회사'
+          }
+        });
+
+        // Create a pie chart, passing some options
+        var pieChart = new google.visualization.ChartWrapper({
+          'chartType': 'ColumnChart',
+          'containerId': 'chart_div3',
+          'options': {
+            //'width': 1500,
+            'title': '회사 연도별 입고',
+            'height': 300,
+            'pieSliceText': 'value',
+            'legend': 'right'
+          }
+        });
+
+        // Establish dependencies, declaring that 'filter' drives 'pieChart',
+        // so that the pie chart will only display entries that are let through
+        // given the chosen slider range.
+        dashboard.bind([donutRangeSlider], [pieChart, table]);
+
+        // Draw the dashboard.
+        dashboard.draw(data);
+      }
+    </script>
+
+{% endblock %}
+

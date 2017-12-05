@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+        <div class="col-sm-3 col-md-2">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#">파레트 입고량 예측</a></li>
+            <li class = "list-group-item"><a href="#">파레트 회수량 예측</a></li>
+            <li class = "list-group-item"><a href="#">파레트 유실량 분석</a></li>
+            <li class = "list-group-item"><a href="#">기업별 예측</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col"><h1 class="page-header">파레트 입고량 예측 </h1></div>
+                </div>
+                <div class="row">
+                    <div class="col card" >
+                        <h4 class="card-header">가중치 평균 방식 예측</h4>
+                        <div class="card-body" id="chart_div">
+                        </div>
+
+                        <table class="table table-bordered">
+                            <thread>
+                                <tr>
+                                    <th scope="col">갯수</th>
+                                    <th scope="col">1월</th>
+                                    <th scope="col">2월</th>
+                                    <th scope="col">3월</th>
+                                    <th scope="col">4월</th>
+                                    <th scope="col">5월</th>
+                                    <th scope="col">6월</th>
+                                    <th scope="col">7월</th>
+                                    <th scope="col">8월</th>
+                                </tr>
+                            </thread>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <th scope="row">2017년 예상 입고량</th>
+                                    <td>2791847</td>
+                                    <td>2299212</td>
+                                    <td>2926524</td>
+                                    <td>2740208</td>
+                                    <td>3056478</td>
+                                    <td>2970693</td>
+                                    <td>2920495</td>
+                                    <td>3359148</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col card" >
+                        <h4 class="card-header">Prophet 알고리즘 예측</h4>
+                        <div class="card-body" id="chart_div2"></div>
+
+                        <table class="table table-bordered">
+                            <thread>
+                                <tr>
+                                    <th scope="col">갯수</th>
+                                    <th scope="col">1월</th>
+                                    <th scope="col">2월</th>
+                                    <th scope="col">3월</th>
+                                    <th scope="col">4월</th>
+                                    <th scope="col">5월</th>
+                                    <th scope="col">6월</th>
+                                    <th scope="col">7월</th>
+                                    <th scope="col">8월</th>
+                                </tr>
+                            </thread>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <th scope="row">2017년 예상 입고량</th>
+                                    <td>2806465.83</td>
+                                    <td>2509409.65</td>
+                                    <td>2962812.73</td>
+                                    <td>3082020.73</td>
+                                    <td>2999229.26</td>
+                                    <td>3218424.34</td>
+                                    <td>3381647.27</td>
+                                    <td>3084287.95</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+</div>
+
+    <script type="text/javascript" >
+          google.charts.load('current', {'packages':['corechart','controls', 'table']});
+          google.charts.setOnLoadCallback(drawareaChart);
+          google.charts.setOnLoadCallback(drawbarChart);
+          google.charts.setOnLoadCallback(drawDashboard);
+
+          function drawareaChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['month', '2017년 예상량' ,'2016 데이터', '2015 데이터','2014 데이터', '2013 데이터'],
+                ['1',2791847,2589581 , 2387315,2312651, 2338371],
+                ['2', 2299212,2161311 , 2023410,1918315, 1826812],
+                ['3', 2926524 ,2658883 , 2391242,2253303, 2115859],
+                ['4', 2740208 ,2583168 , 2426128,2423125, 2211666],
+                ['5', 3056478 ,2717901 , 2379324,2428432, 2272595],
+                ['6', 2970693 ,2775786 , 2580879,2325012, 2173437],
+                ['7', 2920495 ,2785058 , 2649621,2541255, 2369979],
+                ['8', 3359148 ,2879211 , 2399274,2352303, 2310038],
+                ['9', null,2668419 , 2403870, 2094096, 1989422],
+                ['10', null,2785343 , 2482065, 2446477, 2329110],
+                ['11', null, 2781804, 2354911, 2155904, 2129722],
+                ['12', null , 2781804, 2354911, 2155904, 2129722],
+
+            ]);
+
+            var area_options = {
+              title: '2017년 예상 입고량',
+              hAxis: {title: '월별',  titleTextStyle: {color: '#333'}},
+              vAxis: {minValue: 0},
+              //width: 500,
+              height: 400,
+                colors:['blue','gray','gray','white','white']
+            };
+
+
+            var area_chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            area_chart.draw(data, area_options);
+          };
+
+
+
+          function drawbarChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['month', '2017년 예상량' ,'2016 데이터', '2015 데이터','2014 데이터', '2013 데이터'],
+                ['1',2806465.83,2589581 , 2387315,2312651, 2338371],
+                ['2', 2509409.65,2161311 , 2023410,1918315, 1826812],
+                ['3', 2962812.73,2658883 , 2391242,2253303, 2115859],
+                ['4', 3082020.73,2583168 , 2426128,2423125, 2211666],
+                ['5', 2999229.26,2717901 , 2379324,2428432, 2272595],
+                ['6', 3218424.34,2775786 , 2580879,2325012, 2173437],
+                ['7', 3381647.27,2785058 , 2649621,2541255, 2369979],
+                ['8', 3084287.95,2879211 , 2399274,2352303, 2310038],
+                ['9', null,2668419 , 2403870, 2094096, 1989422],
+                ['10', null,2785343 , 2482065, 2446477, 2329110],
+                ['11', null, 2781804, 2354911, 2155904, 2129722],
+                ['12', null , 2781804, 2354911, 2155904, 2129722],
+
+            ]);
+
+            var area_options = {
+              title: '2017년 예상 입고량',
+              hAxis: {title: '월별',  titleTextStyle: {color: '#333'}},
+              vAxis: {minValue: 0},
+              //width: 500,
+              height: 400,
+                colors:['blue','gray','gray','white','white']
+            };
+
+
+            var area_chart = new google.visualization.AreaChart(document.getElementById('chart_div2'));
+            area_chart.draw(data, area_options);
+          };
+
+
+
+
+    </script>
+
+{% endblock %}
+

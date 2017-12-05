@@ -1,0 +1,46 @@
+#docker-compose for distribute (docker-machine remote)
+#1. Use images already made (prepare images)
+#1-1. if rebuild image , docker compose use it from
+#2. All volumes path must be the path of docker machine host`s path
+#3. Copy all files in local`s host-docker-machine-file directory to host docker remote machine`s /home/username. (using `docker-machine scp`)
+#4. Set environment variable fit to remote server, and Run Docker Compose Up .
+
+version: '3'
+
+services:
+    db:
+        restart: always
+        image: postgres
+        expose:
+          - "5432"
+
+    web:
+        #restart: always
+        build: ./django-image
+
+        volumes:                                # docker-machine -> docker-compose up -> volume 은 host machine path 기반
+          - "/home/shinjayne/host-docker-machine-file/web-volume:/src"
+          - "/home/shinjayne/host-docker-machine-file/static:/src/avocado_project/staticfiles/"
+          #- type: volume
+          #  source: staticfiles
+          #  target: /src/avocado_project/staticfiles
+        expose:
+            - "8000"
+        depends_on:
+            - db
+        command: ./runweb.sh  #path in web container (/src/runweb.sh)
+        #container only exsists during command running.
+
+    nginx:
+        restart: always
+        image: nginx
+        volumes:
+          - "/home/shinjayne/host-docker-machine-file/nginx-volume:/etc/nginx/conf.d"
+          - "/home/shinjayne/host-docker-machine-file/static:/static/"
+        depends_on:
+          - web
+        ports:
+          - "80:80"
+
+
+

@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+    db:
+        restart: always
+        image: postgres
+        expose:
+          - "5432"
+
+    web:
+        #restart: always
+        build: ./django-image
+
+        volumes:                                # docker-machine -> docker-compose up -> volume 은 host machine path 기반
+          - "./host-docker-machine-file/web-volume:/src"
+          - "./host-docker-machine-file/static:/src/avocado_project/staticfiles/"
+          - "./host-docker-machine-file/media:/src/avocado_project/mediafiles/"
+          #- type: volume
+          #  source: staticfiles
+          #  target: /src/avocado_project/staticfiles
+        expose:
+            - "8000"
+        depends_on:
+            - db
+        command: ./runweb.sh
+        #container only exsists during command running.
+
+    nginx:
+        restart: always
+        image: nginx
+        volumes:
+          - "./host-docker-machine-file/nginx-volume:/etc/nginx/conf.d"
+          - "./host-docker-machine-file/static:/static/"
+        depends_on:
+          - web
+        ports:
+          - "80:80"
+
+
+#volumes:
+#  static:

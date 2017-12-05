@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+        <div class="col-sm-3 col-md-2">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="/predict/shownow/">현황 보기</a></li>
+            <li class = "list-group-item"><a href="/predict/company/p=1/">고객기업 분석</a></li>
+            <li class = "list-group-item"><a href="#">전체 거래 조회</a></li>
+            <li class = "list-group-item"><a href="#">기타</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col"><h1 class="page-header">고객기업 분석</h1></div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <form class="form-inline my-2 my-lg-0" action="/predict/company/p=1/" method="post">
+                            {% csrf_token %}
+                            <input class="form-control mr-sm-4 mb-1" type="text" placeholder="Search" aria-label="Search" name="search">
+                            <button class="btn btn-outline-success my-2 my-sm-4 mb-4" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group">
+                        {% for company in all_company %}
+                            <li class="list-group-item">
+                                {{ company.id }}
+                                <a href="/predict/companyinfo/{{ company.id }}/">{{ company.name }}</a>
+                            </li>
+                        {% endfor %}
+                        </ul>
+
+                        {% if page_number != '1' %}
+                        <a href="/predict/company/p={{ prev_page }}"> Previous page </a>
+                        {% endif %}
+
+                        page : {{ page_number }}
+                        <a href="/predict/company/p={{ next_page }}"> Next page </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+</div>
+
+
+{% endblock %}
