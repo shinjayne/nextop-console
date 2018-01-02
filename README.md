@@ -1,6 +1,10 @@
 # nextop-service-server
 Service server powered by Django - Nginx - PostgreSQL - Linux - Docker 
 
+## 시연영상
+
+https://youtu.be/fBBTuXpnfGI
+
 ## 3 docker virtual macines 
 
 I run theee docker virtual machines, which is for 1.django, 2.nginx web server, 3.postgresql Database . 
