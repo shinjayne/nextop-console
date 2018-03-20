@@ -25,7 +25,7 @@ SECRET_KEY = 'kacz0w*i4)p)*e%37ar5v-myjj0d3qyyg+2sj$2w8th3tpf5d&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["web"]
+ALLOWED_HOSTS = ["servergroup1"]
 
 
 # Application definition
@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'predict_app',
     'homepage_app',
+    'auth_app',
+    'datamanager_app',
 ]
 
 MIDDLEWARE = [
@@ -115,6 +116,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+AUTHENTICATION_BACKENDS = ['auth_app.backends.EmailBackend']
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -134,10 +137,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
-AUTH_USER_MODEL = 'predict_app.AvocadoUser'
+AUTH_USER_MODEL = 'auth_app.NextopUser'
+
+# for @login_required decorator
+LOGIN_URL = "/auth/login/"
+

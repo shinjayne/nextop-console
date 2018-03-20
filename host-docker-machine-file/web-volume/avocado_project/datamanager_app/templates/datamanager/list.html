@@ -1,0 +1,76 @@
+<!--Load the AJAX API & GOOGLE CHART-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<div ng-app="ChartApp" ng-controller="ChartControl">
+
+<h1>{{ m }} 리스트</h1>
+<hr/>
+<p> 검색기능 </p>
+<hr/>
+<hr/>
+<p> 전체 데이터 개형 </p>
+<span id="year_trend_chart"></span>
+<span id="month_trend_chart"></span>
+<span id="weekday_trend_chart"></span>
+<hr/>
+{% for row in qset %}
+    <li> <a href={% url "datamanager_info" m=m id=row.id %}>{{ row }}</a> | 건수 : {{ row.count }} | 평균수량 : {{ row.avg | floatformat}} </li>
+{% endfor %}
+<hr/>
+<h3>pagenation</h3>
+<a href={% url "datamanager_list" m=m page=prev_next.0 %}>previous page</a>
+||||
+<a href={% url "datamanager_list" m=m page=prev_next.1 %}>next page</a>
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+    var app = angular.module('ChartApp', []);
+    app.controller('ChartControl', function($scope, $http) {
+
+        function drawGoogle(request,elid){
+            request.then(function(response){
+                google.charts.load('current', {'packages':['corechart']}) ;
+                google.charts.setOnLoadCallback(drawChart);
+
+                function drawChart(){
+                    //console.log(md);
+                    console.log(response.data);
+                    var dt = new google.visualization.DataTable(response.data);
+                    var chart = new google.visualization.BarChart(document.getElementById(elid));
+                    chart.draw(dt, {width:500, height:400}) ;
+                }
+            })
+        }
+
+
+
+        var request1 = $http({
+            method:"get",
+            url:"{% url "datamanager_api_chartdata"  m='all' id=0 unit="year"%}"}) ;
+        drawGoogle(request1,"year_trend_chart");
+
+        var request2 = $http({
+            method:"get",
+            url:"{% url "datamanager_api_chartdata"  m='all' id=0 unit="month"%}"}) ;
+        drawGoogle(request2,"month_trend_chart");
+
+        var request3 = $http({
+            method:"get",
+            url:"{% url "datamanager_api_chartdata"  m='all' id=0 unit="weekday"%}"}) ;
+        drawGoogle(request3,"weekday_trend_chart");
+
+
+    });
+
+
+
+</script>

@@ -1,0 +1,372 @@
+{% extends 'homepage_app/base/console.html' %}
+
+{% block sidebar %}
+
+            <h2>Finder</h2>
+            <div class="list-group" id="model-list">
+                <button class = "list-group-item" id="code" ng-click="model('code','id')"><h5 class="d-inline"><span class="badge badge-warning">기업 Code</span></h5> 검색</button>
+                <button class = "list-group-item" id="palletcode" ng-click="model('palletcode','id')"><h5 class="d-inline"><span class="badge badge-info">Pallet Code </span></h5>검색</button>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">정렬 기준</h4>
+                    <div class="card-text">
+                        <div class="list-group" id="order-list">
+                            <button class = "list-group-item" id="id" ng-click="model(m,'id')">id 순</button>
+                            <button class = "list-group-item" id='-count' ng-click="model(m,'-count')">횟수 많은 순</button>
+                            <button class = "list-group-item" id= 'count' ng-click="model(m,'count')">횟수 적 순</button>
+                            <button class = "list-group-item" id='-sum' ng-click="model(m,'-sum')">총거래량 많은 순</button>
+                            <button class = "list-group-item" id='sum' ng-click="model(m,'sum')">총거래량 적은 순</button>
+                            <button class = "list-group-item" id='-avg' ng-click="model(m,'-avg')">평균 높은 순</button>
+                            <button class = "list-group-item" id='avg' ng-click="model(m,'avg')">평균 낮은 순</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Filter</h4>
+                    <div class="card-text">
+                        <p class="alert alert-danger">from {! filter.year__gte !} </p>
+                        <button ng-repeat="y in [2010,2011,2012,2013,2014,2015,2016,2017]" ng-click="filter.year__gte=y">
+                            {! y !}
+                        </button>
+                        <p class="alert alert-danger">to {! filter.year__lte !} </p>
+                        <button ng-repeat="y in [2010,2011,2012,2013,2014,2015,2016,2017]" ng-click="filter.year__lte=y">
+                            {! y !}
+                        </button>
+
+                        <button class="btn btn-outline-danger" ng-click="refresh()"> Filter 적용 </button>
+                    </div>
+                </div>
+            </div>
+
+{% endblock %}
+
+{% block window %}
+    <div class="row">
+        <div class="col-4">
+                <h3> {! m !} 리스트 (총  {! list.length !}/ {! howmany !} 개)</h3>
+                <div class="alert alert-danger" ng-if="m=='palletcode'">횟수가 2000 이상인 파레트코드 조회는 매우 느리거나 실패할 수 있습니다.</div>
+                <button class="btn btn-secondary btn-block"  ng-click="getmore()">50개 더보기</button>
+                <div class="list-group pre-scrollable" id="item-list" style="max-height:700px">
+                    <button class="list-group-item text-left" ng-repeat="x in list" ng-click="showinfo(m ,x)"  id="item-{! x.id !}" style="min-height:50px">
+                        <span class="badge-pill badge-secondary"> {! x.id !} </span>
+                        <h5 class="d-inline"><span class="badge badge-info" ng-if="m=='palletcode'">{! x.code+x.palletcode !}</span></h5>
+                        <h5 class="d-inline"><span class="badge badge-warning" ng-if="m=='code'">{! x.code+x.palletcode !}</span></h5>
+                        <span class="text-secondary">{! '횟수'+ x.count + '번 | 평균'+x.avg+'개' !}</span>
+                    </button>
+                </div>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <h3 class="col-3">선택 상세 정보</h3>
+                <div class="col alert alert-primary mr-5 text-uppercase text-center">
+                    {! info_m !}
+                    <h4 class="d-inline"><span class="badge badge-info" ng-if="m=='palletcode'">{! info_name !}</span></h4>
+                    <h4 class="d-inline"><span class="badge badge-warning" ng-if="m=='code'">{! info_name !}</span></h4>
+                </div>
+            </div>
+            <div class="row">
+            {% include 'homepage_app/components/infonav.html' %}
+            </div>
+
+                <div class="pre-scrollable" id="gs_window" style="max-height:700px">
+                    <div class="gs d-none" id="gs_trend">
+                        <h4> Year Trend</h4>
+                        <div id="year_trend"></div>
+                        <a></a>
+                        <hr/>
+                        <h4> Month Trend</h4>
+                        <div id="month_trend"></div>
+                        <a></a>
+                        <hr/>
+                        <h4> 주일 Trend</h4>
+                        <div id="weekday_trend"></div>
+                        <a></a>
+                        <hr/>
+                    </div>
+                    <div class="gs d-none" id="gs_cycle">
+                        <h4> Month 주기성</h4>
+                        <div id="2017_trend_chart"></div>
+                        <a></a>
+                        <hr/>
+                        <h4> Week 주기성</h4>
+                        <div id="day_week_chart"></div>
+                        <a></a>
+                    </div>
+                    <div class="gs d-none" id="gs_rhythm">
+                        <h4> 주문분석 : 리듬</h4>
+                        <div id="day_trend_chart"></div>
+                        <a></a>
+                        <hr/>
+                        <h4> 리듬 순위</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <div id="rhythm_rank_chart2"></div>
+                            </div>
+                            <div class="col-8">
+                                <div id="rhythm_rank_chart"></div>
+                                <a></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <hr/>
+
+                </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+{% block js %}
+
+
+    <script type="text/javascript">
+
+        app = consoleApp;
+        app.controller('consoleControl', function($scope, $http) {
+
+            $scope.m="all";
+
+            $scope.filter={
+                year__gte:2017,
+                year__lte:2017
+            };
+
+
+            // 이벤트처리1 : 버튼 누르면 조건에 맞는 리스트를 보여줌
+            $scope.model = function(m,order){
+                $scope.m = m;
+                $scope.order = order;
+                $scope.page=1;
+
+                $('#model-list .list-group-item').attr('class','list-group-item');
+                var exsist = $('#'+$scope.m).attr('class');
+                $('#'+$scope.m).attr('class', exsist+' active');
+                $('#order-list .list-group-item').attr('class','list-group-item');
+                var exsist2 = $('#'+$scope.order).attr('class');
+                $('#'+$scope.order).attr('class',exsist2+" active");
+
+                var request = $http({
+                    method:"post",
+                    url:"{% url "datamanager_api_list"%}",
+                    data:{m : m, page:$scope.page,order: order, filter:$scope.filter}
+                });
+                console.log(order);
+
+                request.then(function(response){
+                    $scope.list = response.data.list;
+                    $scope.howmany = response.data.howmany;
+                });
+            };
+
+            // 이벤트처리2: 버튼 누르면 50개 더 가져온다
+            $scope.getmore = function(){
+                $scope.page += 1 ;
+
+                var request = $http({
+                    method:"post",
+                    url:"{% url "datamanager_api_list"%}",
+                    data:{m : $scope.m, page: $scope.page ,order: $scope.order, filter:$scope.filter}
+                });
+
+                request.then(function(response){
+                    $scope.list = $scope.list.concat(response.data.list);
+                    $scope.howmany = response.data.howmany;
+                });
+            } ;
+
+
+            // 이벤트처리 :  버튼 누르면 누른 코드/파레트코드에 대한 정보를 보여줌
+            $scope.showinfo = function(m,x){
+                $scope.info_m = m;
+                $scope.x = x;
+                $scope.info_id = x.id;
+                if (x.code===undefined){
+                    $scope.info_name=x.palletcode;
+                }
+                else{
+                    $scope.info_name=x.code;
+
+                }
+
+                $('#item-list .list-group-item').attr('class','list-group-item text-left');
+                var exsist = $('#item-'+$scope.info_id).attr('class');
+                $('#item-'+$scope.info_id).attr('class', exsist+' active');
+
+                $('#gs_window .gs').attr('class','gs d-none');
+                $scope.show_rhythm();
+
+            } ;
+            $scope.show_trend = function(){
+                $('#infonav .nav-item').attr('class','nav-item');
+                $('#infonav .nav-link').attr('class','nav-link');
+                var exsist = $('#trend').attr('class');
+                $('#trend').attr('class', exsist+' active');
+
+                $('#gs_window .gs').attr('class','gs d-none');
+                $('#gs_trend').attr('class', 'gs');
+
+
+                var request_yeartrend = $http({
+                    method:"post",
+                    url:"{% url 'datamanager_api_chart_trend' %}",
+                    data:{m:$scope.m, id:$scope.x.id, unit:"year", filter:$scope.filter}
+                }) ;
+                var request_monthtrend = $http({
+                    method:"post",
+                    url:"{% url 'datamanager_api_chart_trend' %}",
+                    data:{m:$scope.m, id:$scope.x.id, unit:"month", filter:$scope.filter}
+                }) ;
+                var request_weekdaytrend = $http({
+                    method:"post",
+                    url:"{% url 'datamanager_api_chart_trend'  %}",
+                    data:{m:$scope.m, id: $scope.x.id, unit:"weekday", filter:$scope.filter}
+                }) ;
+
+                var general_options = {
+                    height:400,
+                    colors:['#F9564B', '#F9984B','#F9D74B','#F9D74B','#98F94B','#3C9244','#51D8DC','#51D8DC','#95C6E8','#976AE8','#E46AE8','#1A5881'],
+                    animation : {'startup':true,duration:1000},
+                    curveType:'function'
+                };
+
+                drawFromRequest(
+                    request_yeartrend,
+                    general_options,
+                    google.visualization.BarChart,
+                    'year_trend', true);
+
+                drawFromRequest(
+                    request_monthtrend,
+                    general_options,
+                    google.visualization.BarChart,
+                    'month_trend', true
+                );
+
+                drawFromRequest(
+                  request_weekdaytrend,
+                  general_options,
+                  google.visualization.BarChart,
+                  'weekday_trend', true
+                );
+            };
+            $scope.show_cycle = function () {
+                $('#infonav .nav-item').attr('class','nav-item');
+                $('#infonav .nav-link').attr('class','nav-link');
+                var exsist = $('#cycle').attr('class');
+                $('#cycle').attr('class', exsist+' active');
+
+                $('#gs_window .gs').attr('class','gs d-none');
+                $('#gs_cycle').attr('class', 'gs');
+
+                var request8 = $http({
+                    method:"post",
+                    url:"{% url 'datamanager_api_chart_trend' %}",
+                    data:{m:$scope.m, id: $scope.x.id, unit:"day__month", filter:$scope.filter}
+                }) ;
+                var request10 = $http({
+                    method:"post",
+                    url:"{% url "datamanager_api_chart_trend" %}",
+                    data:{m:$scope.m, id: $scope.x.id, unit:"day__week", filter:$scope.filter}
+                }) ;
+
+                var general_options = {
+                    height:400,
+                    colors:['#F9564B', '#F9984B','#F9D74B','#F9D74B','#98F94B','#3C9244','#51D8DC','#51D8DC','#95C6E8','#976AE8','#E46AE8','#1A5881'],
+                    animation : {'startup':true,duration:1000},
+                    curveType:'function'
+                };
+
+                drawFromRequest(
+                    request8,
+                    general_options,
+                    google.visualization.LineChart,
+                    '2017_trend_chart', true
+                );
+                drawFromRequest(
+                    request10,
+                    general_options,
+                    google.visualization.LineChart,
+                    'day_week_chart', true
+                );
+
+            };
+
+            $scope.show_rhythm = function(){
+                $('#infonav .nav-item').attr('class','nav-item');
+                $('#infonav .nav-link').attr('class','nav-link');
+                var exsist = $('#rhythm').attr('class');
+                $('#rhythm').attr('class', exsist+' active');
+
+                $('#gs_window .gs').attr('class','gs d-none');
+                $('#gs_rhythm').attr('class', 'gs');
+
+                var request9 = $http({
+                    method:"post",
+                    url:"{% url "datamanager_api_chart_rhythm_plot" %}",
+                    data:{m:$scope.m, id: $scope.x.id, filter:$scope.filter}
+                }) ;
+
+                var request_rhythm_rank = $http({
+                    method:"post",
+                    url:"{% url "datamanager_api_chart_rhythm" %}",
+                    data:{m:$scope.m, id: $scope.x.id, filter:$scope.filter}
+                }) ;
+
+
+
+                var general_options = {
+                    height:600,
+                    colors:['#F9564B', '#F9984B','#F9D74B','#F9D74B','#98F94B','#3C9244','#51D8DC','#51D8DC','#95C6E8','#976AE8','#E46AE8','#1A5881'],
+                    animation : {'startup':true,duration:1000},
+                    curveType:'function'
+                };
+
+
+                drawFromRequest(
+                    request9,
+                    general_options,
+                    google.visualization.ScatterChart,
+                    'day_trend_chart', true
+                );
+
+                drawFromRequest(
+                    request_rhythm_rank,
+                    general_options,
+                    google.visualization.BarChart,
+                    'rhythm_rank_chart', true
+                );
+
+                drawWithoutPng(
+                    request_rhythm_rank,
+                    general_options,
+                    google.visualization.Table,
+                    'rhythm_rank_chart2', false
+                );
+
+            } ;
+
+            $scope.refresh = function(){
+                $scope.model($scope.m,$scope.order);
+                $scope.showinfo($scope.m,$scope.x);
+            } ;
+        });
+
+
+
+    </script>
+{% endblock %}
+<!--GOOGLE CHART CODE-->
+<!--Angular App CODE-->
+

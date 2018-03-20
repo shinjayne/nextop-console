@@ -1,0 +1,226 @@
+{% extends 'homepage_app/base/console.html' %}
+
+{% block sidebar %}
+
+            <h1>Visualize</h1>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Filter</h4>
+                    <div class="card-text">
+                        <p class="alert alert-danger">from {! filter.year__gte !} </p>
+                        <button ng-repeat="y in [2010,2011,2012,2013,2014,2015,2016,2017]" ng-click="filter.year__gte=y">
+                            {! y !}
+                        </button>
+                        <p class="alert alert-danger">to {! filter.year__lte !} </p>
+                        <button ng-repeat="y in [2010,2011,2012,2013,2014,2015,2016,2017]" ng-click="filter.year__lte=y">
+                            {! y !}
+                        </button>
+
+                        <button class="btn btn-outline-danger" ng-click="refresh()"> Filter 적용 </button>
+                    </div>
+                </div>
+            </div>
+
+
+{% endblock %}
+
+{% block window %}
+
+
+                <div class="row">
+                    <h3 class="col alert alert-warning mr-5 text-uppercase text-center"> Pallet Code RANK | 파레트코드 순위 </h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>거래 횟수 Top10</p>
+                        <div id="pc_count_top"></div>
+                        <a></a>
+                    </div>
+                    <div class="col">
+                        <p>1회당 거래량 Top10</p>
+                        <div id="pc_avg_top"></div>
+                        <a></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3 class="col alert alert-success mr-5 text-uppercase text-center"> Company Code RANK | 회사코드 순위 </h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>거래 횟수 Top10</p>
+                        <div id="c_count_top"></div>
+                        <a></a>
+                    </div>
+                    <div class="col">
+                        <p>1회당 거래량 Top10</p>
+                        <div id="c_avg_top"></div>
+                        <a></a>
+                        </div>
+                </div>
+
+
+            <hr/>
+            <h3 class="col alert alert-primary mr-5 text-uppercase text-center mr-5"> TREND | 경향 </h3>
+            <div class="row">
+                <div class="col">
+                    <p>YEAR TREND</p>
+                    <div id="year_trend_chart"></div>
+                    <a></a>
+                </div>
+                <div class="col">
+                    <p>MONTH TREND</p>
+                    <div id="month_trend_chart"></div>
+                    <a></a>
+                </div>
+                <div class="col">
+                    <p>WEEKDAY TREND</p>
+                    <div id="weekday_trend_chart"></div>
+                    <a></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>OVERALL TREND</p>
+                    <div id="day_trend_chart"></div>
+                    <a></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>OVERALL TREND</p>
+                    <div id="2017_trend_chart"></div>
+                    <a></a>
+                </div>
+            </div>
+
+{% endblock %}
+
+{% block js %}
+
+
+    <!--GOOGLE CHART CODE-->
+    <!--Angular App CODE-->
+
+    <script type="text/javascript">
+
+        // app
+        var app = consoleApp;
+
+        // controller
+        app.controller('consoleControl', function($scope, $http) {
+
+            $scope.filter={
+                year__gte:2017,
+                year__lte:2017
+            };
+
+
+
+            $scope.refresh = function() {
+                var general_options = {
+                    height: 400,
+                    width:300,
+                    colors: ['#F9564B', '#F9984B', '#F9D74B', '#F9D74B', '#98F94B', '#3C9244', '#51D8DC', '#51D8DC', '#95C6E8', '#976AE8', '#E46AE8', '#1A5881'],
+                    animation: {'startup': true, duration: 1000},
+                    curveType: 'function'
+                };
+
+
+                var request4 = $http({
+                    method: "post",
+                    url: "{% url "datamanager_api_chart_rank" %}",
+                    data: {m: "palletcode", key: "-count", num: 10, filter: $scope.filter}
+                });
+                drawFromRequest(
+                    request4,
+                    general_options,
+                    google.visualization.BarChart,
+                    "pc_count_top"
+                );
+
+
+                var request5 = $http({
+                    method: "post",
+                    url: "{% url "datamanager_api_chart_rank"  %}",
+                    data: {m: "palletcode", key: "-avg", num: 10, filter: $scope.filter}
+                });
+                drawFromRequest(
+                    request5,
+                    general_options,
+                    google.visualization.BarChart,
+                    "pc_avg_top"
+                );
+
+
+                var request6 = $http({
+                    method: "post",
+                    url: "{% url "datamanager_api_chart_rank" %}",
+                    data: {m: "code", key: "-count", num: 10, filter: $scope.filter}
+                });
+                drawFromRequest(
+                    request6,
+                    general_options,
+                    google.visualization.BarChart,
+                    "c_count_top"
+                );
+
+                var request7 = $http({
+                    method: "post",
+                    url: "{% url "datamanager_api_chart_rank" %}",
+                    data: {m: "code", key: "-avg", num: 10, filter: $scope.filter}
+                });
+                drawFromRequest(
+                    request7,
+                    general_options,
+                    google.visualization.BarChart,
+                    "c_avg_top"
+                );
+
+                var request1 = $http({
+                    method: "post",
+                    url: "{% url "datamanager_api_chart_trend" %}",
+                    data: {m: 'all', id: 0, unit: "year", filter: $scope.filter}
+                });
+                drawFromRequest(
+                    request1,
+                    general_options,
+                    google.visualization.ColumnChart,
+                    "year_trend_chart"
+                );
+
+                var request2 = $http({
+                    method: "post",
+                    url: "{% url "datamanager_api_chart_trend" %}",
+                    data: {m: 'all', id: 0, unit: "month", filter: $scope.filter}
+                });
+                drawFromRequest(
+                    request2,
+                    general_options,
+                    google.visualization.ColumnChart,
+                    "month_trend_chart"
+                );
+
+                var request3 = $http({
+                    method: "post",
+                    url: "{% url "datamanager_api_chart_trend" %}",
+                    data: {m: 'all', id: 0, unit: "weekday", filter: $scope.filter}
+                });
+                drawFromRequest(
+                    request3,
+                    general_options,
+                    google.visualization.ColumnChart,
+                    "weekday_trend_chart"
+                );
+            };
+
+
+            $scope.refresh();
+        });
+
+
+
+
+    </script>
+
+{% endblock %}

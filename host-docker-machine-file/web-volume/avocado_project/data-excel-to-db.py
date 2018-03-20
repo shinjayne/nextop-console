@@ -3,51 +3,59 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "avocado_project.settings")
 import django
 django.setup()
 
-from predict_app import models
+from datamanager_app import models
+
+from datetime import datetime
 
 import pandas as pd
 
-df2010 = pd.read_excel('kpp_data.xlsx', sheetname='2010년')
-print("(1/10) dataframe 2010  read complete!")
-df2011 = pd.read_excel('kpp_data.xlsx', sheetname='2011년')
-print("(2/10) dataframe 2011  read complete!")
-df2012 = pd.read_excel('kpp_data.xlsx', sheetname='2012년')
-print("(3/10) dataframe 2012  read complete!")
-df2013 = pd.read_excel('kpp_data.xlsx', sheetname='2013년')
-print("(4/10) dataframe 2013  read complete!")
-df2014 = pd.read_excel('kpp_data.xlsx', sheetname='2014년')
-print("(5/10) dataframe 2014  read complete!")
-df2015 = pd.read_excel('kpp_data.xlsx', sheetname='2015년')
-print("(6/10) dataframe 2015  read complete!")
-df2016 = pd.read_excel('kpp_data.xlsx', sheetname='2016년')
-print("(7/10) dataframe 2016  read complete!")
-df2017 = pd.read_excel('kpp_data.xlsx', sheetname='201708')
-print("(8/10) dataframe 2017  read complete!")
+csvlist = [
+    '_csvs/in10-12/2010.csv',
+    '_csvs/in10-12/2010(1).csv',
+    '_csvs/in10-12/2010(2).csv',
+    '_csvs/in10-12/2011.csv',
+    '_csvs/in10-12/2011(1).csv',
+    '_csvs/in10-12/2011(2).csv',
+]
 
-dflist = [df2010, df2011,df2012, df2013, df2014, df2015, df2016 , df2017]
+dflist = []
+for csv in csvlist :
+    dflist.append(pd.read_csv(csv))
+
+print("(1~8/10) make df complete!")
+
 
 for df in dflist:
-    compact = df[["년월", "DPT_NAM", "EMP_NAM", "업체명", "투입수량","코드"]]
+    compact = df[["코드", "발송일", "유형코드", "수량"]]
 
     long = len(df)
     for i in range(long):
         row = list(compact.iloc[i])
-        date = row[0].to_pydatetime()
-        department = row[1]
-        manager = row[2]
-        company = models.Company.objects.get(name=row[3])
-        pallet_out = row[4]
-        code = str(row[5])
+        type = "IN"
+        code = models.Code.objects.get(code=str(int(row[0])))
+        date = datetime(int(str(row[1])[:4]), int(str(row[1])[4:6]), int(str(row[1])[6:]))
+        palletcode = models.PalletCode.objects.get(palletcode = str(int(row[2])))
 
         try :
-            exsist = models.PalletData.objects.filter(date=date).filter(company=company).get(pallet_out=pallet_out)
-            exsist.code = code
+            pallet = int(row[3].replace('-','').strip().replace(',',''))
+        except :
+            pallet = int(-404)
+
+        if i%1000 == 0 :
+            print("ok running ,,,")
+
+        try :
+            exsist = models.KppPalletData.objects.filter(date=date).filter(code=code).get(pallet=pallet)
+            exsist.palletcode = palletcode
+            exsist.type="IN"
             exsist.save()
 
+
         except :
-            pallet_data = models.PalletData(date=date, department=department, manager=manager, company=company,
-                                            pallet_out=pallet_out, code=code)
+            pallet_data = models.KppPalletData(type=type, code=code, date=date, palletcode=palletcode, pallet=pallet)
             pallet_data.save()
+            #print("############ ?! Add New!? ##############")
+            #print("############" ,date,"/", pallet,"개/" )
 
 
 

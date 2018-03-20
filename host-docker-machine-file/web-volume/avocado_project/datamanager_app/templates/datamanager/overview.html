@@ -1,0 +1,10 @@
+in 2017
+{% for top in topsix %}
+    <p><a href={% url "datamanager_info" m="code" id=top.1.id %}>code = {{ top.1 }} : amount = {{ top.0 }}</a></p>
+{% endfor %}
+
+회수데이터 / 투입데이터
+<li>코드 랭킹 in 2017</li>
+<li>파레트 코드 랭킹 in 2017</li>
+<li><a href={% url "datamanager_list" m="code" page=1 %}>업체 코드 리스트 보러 go</a></li>
+<li><a href={% url "datamanager_list" m="palletcode" page=1 %}>파레트 코드 리스트 보러 go</a></li>

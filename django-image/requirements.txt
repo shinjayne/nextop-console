@@ -4,10 +4,9 @@ djangorestframework==3.6.2
 selenium
 bs4
 gunicorn==19.6.0
-psycopg2==2.6.2
+psycopg2==2.7.3.2
 firebase-admin
 numpy
 tensorflow==1.2.1
 pandas==0.20.3
-fbprophet
 xlrd

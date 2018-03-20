@@ -17,6 +17,11 @@
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/host-docker-machine-file/web-volume/avocado_project/auth_app/templates" />
+      </list>
+    </option>
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="Nosetests" />

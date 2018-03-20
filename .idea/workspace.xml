@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6516b50-a5c6-4210-8ada-a86308fe5092" name="Default" comment="" />
+    <list default="true" id="b6516b50-a5c6-4210-8ada-a86308fe5092" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/avocado-project.iml" afterPath="$PROJECT_DIR$/.idea/avocado-project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/static/homepage_app/js/drawGoogle.js" afterPath="$PROJECT_DIR$/host-docker-machine-file/static/homepage_app/js/drawGoogle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/urls.py" afterPath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/views.py" afterPath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/js/drawGoogle.js" afterPath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/js/drawGoogle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/base/console.html" afterPath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/base/console.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/components/infonav.html" afterPath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/components/infonav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/finder.html" afterPath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/finder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/visualize.html" afterPath="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/visualize.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,19 +20,92 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
-    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/avocado_project$list.coverage" NAME="list Coverage Results" MODIFIED="1517308789166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="predict.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/predict.py">
+      <file leaf-file-name="finder.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/finder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="410">
+              <caret line="357" column="15" lean-forward="true" selection-start-line="357" selection-start-column="15" selection-end-line="357" selection-end-column="15" />
               <folding>
-                <element signature="e#7934#9568#0" expanded="false" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#3;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drawGoogle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/js/drawGoogle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="infonav.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/components/infonav.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/list.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consoleApp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/angular_shortcuts/consoleApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/base/console.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+              <folding>
+                <marker date="1517333080475" expanded="true" signature="102:134" ph="{% block title ... %}" />
+                <marker date="1517333080475" expanded="true" signature="1445:1478" ph="{% block sidebar ... %}" />
+                <marker date="1517333080475" expanded="true" signature="1547:1579" ph="{% block window ... %}" />
+                <marker date="1517333080475" expanded="true" signature="1630:1658" ph="{% block js ... %}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -32,63 +116,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ProcessResultGetter</find>
-      <find>mockForecastDictionary</find>
-      <find>static</find>
-      <find>shinjayne/dev</find>
-      <find>show</find>
-      <find>message</find>
-      <find>predict/tasks</find>
-      <find>predict/tasks&quot;</find>
-      <find>Task</find>
-      <find>staticfiles</find>
-      <find>task</find>
-      <find>Avocado</find>
-      <find>제어</find>
-      <find>분석 결과</find>
-      <find>&gt;Home</find>
-      <find>분</find>
-      <find>href=&quot;#&quot;&gt;Nextop</find>
-      <find>href=&quot;/predict/tasks/&quot;&gt;현황 보기</find>
-      <find>href=&quot;#&quot;&gt;예측 추천</find>
-      <find>index</find>
-      <find>i</find>
-      <find>href=&quot;/&quot;&gt;신규 데이터 제출</find>
-      <find>predict/index</find>
-      <find>predict_index</find>
-      <find>filetask</find>
-      <find>in</find>
-      <find>LoggingManager</find>
-      <find>extends base.html</find>
-      <find>FirebaseDatabase</find>
-      <find>txs</find>
+      <find>print</find>
+      <find>list</find>
     </findStrings>
-    <replaceStrings>
-      <replace>predict/tasks/&quot;</replace>
-      <replace>Nextop</replace>
-      <replace>예측 추천</replace>
-      <replace>현황 보기</replace>
-      <replace>&gt;신규 데이터 제출</replace>
-      <replace>href=&quot;/&quot;&gt;Nextop</replace>
-      <replace>href=&quot;/predict/shownow/&quot;&gt;현황 보기</replace>
-      <replace>href=&quot;/predict/showpredict/&quot;&gt;예측 추천</replace>
-      <replace>href=&quot;/predict/form/&quot;&gt;신규 데이터 제출</replace>
-      <replace>predict/form</replace>
-      <replace>form</replace>
-      <replace>FileUploadHistory</replace>
-      <replace>#LoggingManager</replace>
-      <replace>extends 'base.html'</replace>
-      <replace>#FirebaseDatabase</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/host-docker-machine-file/web-volume/nextop-engine/predict</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,87 +133,82 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/django-image-source/Dockerfile" />
-        <option value="$PROJECT_DIR$/godevweb.sh" />
-        <option value="$PROJECT_DIR$/docker-compose-dev.yml" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/predict_app/models.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/userlist.html" />
-        <option value="$PROJECT_DIR$/django-image/Dockerfile" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/static/predict_app/index.css" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/openport.sh" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/views.py" />
-        <option value="$PROJECT_DIR$/docker-compose-distrib.yml" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/urls.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/index2.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/tasks2.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/success2.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/taskinfo2.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/tasks.html" />
-        <option value="$PROJECT_DIR$/update-distrib.sh" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/collect_weather.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/nginx-volume/mydjango.conf" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/urls.py" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/taskinfo.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/data-update.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/index.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/example.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/settings.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/success.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/forms.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/migrations/0003_auto_20171105_0153.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/templates/base.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/form.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/company.htm.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/first-excel-to-db.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/company-excel-to-db.py" />
-        <option value="$PROJECT_DIR$/django-image/requirements.txt" />
         <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/admin.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/data-excel-to-db.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/models.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/company.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/forms.py" />
         <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/urls.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/make-predict.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/shownow.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/company_info.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/showpredict.html" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/index.html" />
         <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/views.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/nextop-engine/predict/algorithm.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/nextop-engine/calculations.py" />
-        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/predict.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/auth_app/urls.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/urls.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/menu.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/sum-to-code.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/nginx-volume/mydjango.conf" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/codeinfo.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/company-excel-to-db.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/admin.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/codelist.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/overview.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/db.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/list.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/serializer.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/serializers.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/overview.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/visualize.html.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/info.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/base.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/index.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/auth_app/views.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/components/navbar.html" />
+        <option value="$PROJECT_DIR$/django-image/Dockerfile" />
+        <option value="$PROJECT_DIR$/django-image/requirements.txt" />
+        <option value="$PROJECT_DIR$/docker-compose-distrib.yml" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/insert.sql" />
+        <option value="$PROJECT_DIR$/update-distrib.sh" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/angular_shortcuts/baseApp.js" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/angular_shortcuts/consoleApp.js" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/settings.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/urls.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/views.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/auth_app/templates/auth_app/login.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/models.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/code-excel-to-db.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/palletcode-excel-to-db.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/data-excel-to-db.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/api_helper.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/googlechart.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/list.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/base/console.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/urls.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/views.py" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/components/infonav.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/visualize.html" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/js/drawGoogle.js" />
+        <option value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/finder.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="960" />
-    <option name="height" value="828" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1498" />
+    <option name="y" value="-308" />
+    <option name="width" value="1280" />
+    <option name="height" value="728" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Django</id>
-          </State>
-          <State>
-            <id>Python</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -198,6 +230,122 @@
             <path>
               <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="datamanager_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="angular_shortcuts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avocado-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avocado-project" type="462c0819:PsiDirectoryNode" />
+              <item name="host-docker-machine-file" type="462c0819:PsiDirectoryNode" />
+              <item name="web-volume" type="462c0819:PsiDirectoryNode" />
+              <item name="avocado_project" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="homepage_app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -244,25 +392,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/shinjayne/gdrive/dev/avocado-project/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/index.html" />
+    <property name="TODO_SCOPE" value="Project Files" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/static" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/django-image-source" />
-      <recent name="$PROJECT_DIR$/nginx-volume" />
-      <recent name="$PROJECT_DIR$/web-volume" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app" />
-      <recent name="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project" />
-      <recent name="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/templates" />
-      <recent name="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/static/predict_app" />
-      <recent name="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app" />
+      <recent name="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/_csvs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,12 +417,33 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.list">
+    <configuration name="list" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="avocado-project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.list" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
-  </component>
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_MODE" value="false" />
-    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,SHOW_FIELDS" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -295,19 +456,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="960" height="828" extended-state="0" />
+    <frame x="1280" y="-308" width="1920" height="1057" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39540508" sideWeight="0.50858366" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27421555" sideWeight="0.49427754" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.319236" sideWeight="0.4914163" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36928105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32648125" sideWeight="0.48569384" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274918" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27382258" sideWeight="0.49427754" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.4914163" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15867944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4041621" sideWeight="0.48569384" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4261954" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -318,28 +479,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39540508" sideWeight="0.50858366" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24425635" sideWeight="0.49427754" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32097188" sideWeight="0.4914163" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33782268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848233" sideWeight="0.48569384" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -349,325 +488,306 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django-image/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/nginx-volume/mydjango.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-distrib.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/templates/avocado_project/index.html" />
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/godevweb.sh" />
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/static/predict_app/index.css">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/migrations/0006_remove_kpppalletdata_palletcode.py" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/migrations/0007_kpppalletdata_palletcode.py" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/migrations/0005_auto_20180118_1315.py" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/migrations/0009_kpppalletdata_palletcode.py" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/migrations/0004_auto_20180118_1004.py" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/urls.py">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/static/predict_app/bootstrap/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="92" lean-forward="false" selection-start-line="2" selection-start-column="86" selection-end-line="2" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/static/predict_app/bootstrap/js/bootstrap.min.js">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="359">
+          <caret line="99" column="52" lean-forward="false" selection-start-line="99" selection-start-column="52" selection-end-line="99" selection-end-column="52" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/templates/datamanager/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/base.html" />
     <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/shownow.html">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/components/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/taskinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-distrib.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/update-distrib.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django-image/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/collect_weather.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/data-update.py" />
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/migrations/0003_auto_20171105_0153.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/taskinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="955">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django-image/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="112" column="28" lean-forward="true" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/runweb.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/data-excel-to-db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/company-excel-to-db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/showpredict.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/company_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1851">
-          <caret line="130" column="14" lean-forward="false" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/shownow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="53" lean-forward="false" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/company.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="25" column="92" lean-forward="false" selection-start-line="25" selection-start-column="92" selection-end-line="25" selection-end-column="92" />
+        <state relative-caret-position="45">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        <state relative-caret-position="435">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/urls.py">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/backup.sql" />
+    <entry file="file://$PROJECT_DIR$/docker-compose-distrib.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="169">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/views.py">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/onlycode.sql" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/onlypalletcode.sql" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/nextop_db" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/db.py" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/insert.sql" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/onlykpp.sql" />
+    <entry file="file://$PROJECT_DIR$/django-image/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/index.html">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/avocado_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="660">
+          <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/nginx-volume/mydjango.conf">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="390">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/templates/predict_app/form.html">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/auth_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        <state relative-caret-position="465">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/manage.py">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/auth_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="120">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/make-predict.py" />
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/nextop-engine/_usecase/algorithm.py" />
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/nextop-engine/_element/calculations.py" />
-    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/predict_app/predict.py">
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/code-excel-to-db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="277">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/auth_app/templates/auth_app/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/data-excel-to-db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/palletcode-excel-to-db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/static/homepage_app/js/drawGoogle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/api_helper.py" />
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/_csvs/in10-12/2012.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update-distrib.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/runweb.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/googlechart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/shortcuts/list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
-            <element signature="e#7934#9568#0" expanded="false" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/base/console.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <marker date="1517333080475" expanded="true" signature="102:134" ph="{% block title ... %}" />
+            <marker date="1517333080475" expanded="true" signature="1445:1478" ph="{% block sidebar ... %}" />
+            <marker date="1517333080475" expanded="true" signature="1547:1579" ph="{% block window ... %}" />
+            <marker date="1517333080475" expanded="true" signature="1630:1658" ph="{% block js ... %}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/components/infonav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/angular_shortcuts/consoleApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/visualize.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/datamanager_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/static/homepage_app/js/drawGoogle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-docker-machine-file/web-volume/avocado_project/homepage_app/templates/homepage_app/finder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="357" column="15" lean-forward="true" selection-start-line="357" selection-start-column="15" selection-end-line="357" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#3;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

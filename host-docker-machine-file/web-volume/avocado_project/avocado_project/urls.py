@@ -21,8 +21,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^predict/', include('predict_app.urls')),
-    url(r'^', include('homepage_app.urls'))
+    url(r'^datamanager/', include('datamanager_app.urls')),
+    url(r'^auth/', include('auth_app.urls')),
+    url(r'^', include('homepage_app.urls')),
+
 ]
 
 

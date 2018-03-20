@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+
+    <!--Load the AJAX API & GOOGLE CHART-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <!--bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!--Custom JS-->
+    <script type="text/javascript" src="{% static 'homepage_app/angular_shortcuts/consoleApp.js' %}"></script>
+    <script type="text/javascript" src="{% static 'homepage_app/js/drawGoogle.js' %}"></script>
+
+    <style>
+        body {
+            margin-top : 100px;
+            font-size : 14px;
+        }
+        h1 {  font-size: 25px;}
+        h2 {  font-size: 23px;}
+        h3 {  font-size: 20px;}
+        h4 {  font-size: 18px;}
+        h5 {  font-size: 17px;}
+    </style>
+
+</head>
+<body>
+    {% include 'homepage_app/components/navbar.html' %}
+
+    <div ng-app="consoleApp" ng-controller="consoleControl">
+        <div class="row">
+            <div class="col-2">
+                {% block sidebar %}{% endblock %}
+            </div>
+            <div class="col-10">
+                {% block window %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    {% block js %}{% endblock %}
+
+    <!--bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
