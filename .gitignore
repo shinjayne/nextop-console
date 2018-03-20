@@ -3,3 +3,4 @@ host-docker-machine-file/web-volume/insert.sql
 host-docker-machine-file/web-volume/onlycode.sql
 host-docker-machine-file/web-volume/onlykpp.sql
 host-docker-machine-file/web-volume/onlypalletcode.sql
+*.ipynb
